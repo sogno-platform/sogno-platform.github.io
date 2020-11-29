@@ -3,7 +3,7 @@ title: "Single Node Setup"
 linkTitle: "Single Node Setup"
 weight: 2
 description: >
-  Instructions on how to set up a single node kubernetes kluster for SOGNO.
+  Instructions on how to set up a single node kubernetes cluster for SOGNO.
 ---
 
 ## Prerequisites
