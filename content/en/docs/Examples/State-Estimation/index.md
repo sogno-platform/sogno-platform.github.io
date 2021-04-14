@@ -19,3 +19,6 @@ The services are implemented as follows:
 - Database adapter: telegraf
 - Time-series database: influx
 - Visualization: Grafana
+- CIM grid viewer: Pintura
+
+Until a comprehensive guide is available here, please refer to the [notes in the example-deployments repo](https://github.com/sogno-platform/example-deployments/tree/main/pyvolt-dpsim-demo).
