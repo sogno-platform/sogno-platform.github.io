@@ -25,7 +25,8 @@ development, testing and deployment. New automation functionalities can be devel
 
 Here goes the description of the architecture independent of specific function / service implementations.
 
-![Architecture](architecture.svg)
+{{< readfile file="/static/architecture.svg" markdown="true" >}}
+
 
 ## Implementation
 
