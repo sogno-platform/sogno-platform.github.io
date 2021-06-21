@@ -15,7 +15,7 @@ SOGNO aims at facilitating the transition to a modular microservices based contr
 
 A preliminary set of automation functionalities will be provided together with the framework and should be further developed as part of the SOGNO project:
 - state-estimation
-- load prediction
+- load forecasting
 - voltage control
 
 The functionalities developed as part of the project will not be treated differently from any other SOGNO compatible automation functions developed externally and use the same interfaces. Due to modules for real-time simulation, the SOGNO project supports a seamless integration of
