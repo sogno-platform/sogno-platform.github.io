@@ -42,7 +42,7 @@ jobs:
     - name: Generate redoc pages
       run: |
         mkdir -p ./public/api
-        npx redoc-cli bundle https://sogno-platform.github.io/dpsim-api/openapi.json --options.theme.colors.primary.main=orange -o public/api/dpsim-api.html
+        npx redoc-cli bundle https://sogno-platform.github.io/dpsim-api/openapi.json -o public/api/dpsim-api.html
 
     - name: Cache dependencies
       uses: actions/cache@v1
