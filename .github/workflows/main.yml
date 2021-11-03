@@ -43,6 +43,7 @@ jobs:
       run: |
         mkdir -p ./public/api
         npx redoc-cli bundle https://sogno-platform.github.io/dpsim-api/openapi.json -o public/api/dpsim-api.html
+        npx redoc-cli bundle https://raw.githubusercontent.com/sogno-platform/sogno-platform.github.io/proloaf-oas/static/api/openapi.json -o public/api/proloaf-api.html
 
     - name: Cache dependencies
       uses: actions/cache@v1
