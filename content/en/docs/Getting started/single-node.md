@@ -60,21 +60,16 @@ For a more convenient and persistent usage, you can also append it to your `.bas
 
 ```
 echo "export KUBECONFIG=/etc/rancher/k3s/k3s.yaml" >> ~/.bashrc
-``` 
+```
 
 ### Databus
 
 One of the most central elements in the SOGNO architecture is the central databus. The current release uses MQTT over the [RabbitMQ](https://www.rabbitmq.com/) broker. We can install rabbitmq via helm:
 
 ```
-helm repo add bitnami https://charts.bitnami.com/bitnami
-helm install -n sogno-demo --create-namespace -f rabbitmq_values.yaml rabbitmq bitnami/rabbitmq 
-```
+# The `rabbitmq_values.yaml` file contains SOGNO specific overwrites of the default rabbitMQ values.
 
-The `rabbitmq_values.yaml` file contains SOGNO specific overwrites of the default rabbitMQ values. For our minimal single node setup, we can use the following values file:
-
-
-```
+cat > /etc/rancher/k3s/rabbitmq_values.yaml<< EOF
 extraPlugins: rabbitmq_mqtt
 
 service:
@@ -87,4 +82,8 @@ service:
 auth:
   username: admin
   password: admin
+EOF
+
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm install -n sogno-demo --create-namespace -f /etc/rancher/k3s/rabbitmq_values.yaml rabbitmq bitnami/rabbitmq
 ```
