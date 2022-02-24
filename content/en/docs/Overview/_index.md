@@ -21,31 +21,11 @@ A preliminary set of automation functionalities will be provided together with t
 The functionalities developed as part of the project will not be treated differently from any other SOGNO compatible automation functions developed externally and use the same interfaces. Due to modules for real-time simulation, the SOGNO project supports a seamless integration of
 development, testing and deployment. New automation functionalities can be developed and thoroughly tested against a virtual real-time representation of the power system.
 
-## Architecture
-
-Here goes the description of the architecture independent of specific function / service implementations.
+## Components
 
 {{< readfile file="/static/architecture.svg" markdown="true" >}}
 
+## Data Flow
 
-## Implementation
-
-### Services
-
-- [packaging catalogue](https://git.rwth-aachen.de/acs/public/catalogue)
-- [state estimation](https://git.rwth-aachen.de/acs/public/automation/pyvolt)
-- [load forecasting](https://git.rwth-aachen.de/acs/public/automation/plf)
-- [coordinated voltage control](https://git.rwth-aachen.de/acs/public/automation/covee)
-- [real-time simulation](https://github.com/dpsim-simulator)
-- [real-time simulation monitoring](https://github.com/VILLASframework/VILLASweb)
-- [(protocol) gateway for real-time applications](https://github.com/VILLASframework/VILLASnode)
-- [IEC CIM adapters](https://github.com/cim-iec)
-
-### API specifications
-
-- [DPsim-CIM API](https://git.rwth-aachen.de/acs/public/cim/cimpy-server/-/blob/master/openapi.yaml)
-- [VILLASnode (daemon)](https://git.rwth-aachen.de/acs/public/villas/node/-/blob/master/doc/openapi.yaml)
-- [VILLASnode (relay)](https://git.rwth-aachen.de/acs/public/villas/node/-/blob/master/doc/openapi.yaml)
-- [VILLASweb](https://git.rwth-aachen.de/acs/public/villas/web-backend-go/-/blob/master/doc/api/swagger.yaml)
-- [FIWARE](https://github.com/FIWARE/specifications)
+{{< readfile file="/static/service-dataflow.svg" markdown="true" >}}
 
