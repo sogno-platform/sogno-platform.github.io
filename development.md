@@ -34,5 +34,5 @@ The website will be available under [http://localhost:1313](http://localhost:131
 ```bash
 git submodule update --init --recursive
 docker build . -t sogno-hugo
-docker run -v $PWD:/website -p 1313:1313 -it sogno-hugo /bin/bash 
-``` 
+docker run -v $PWD:/website -p 1313:1313 -it sogno-hugo
+```
