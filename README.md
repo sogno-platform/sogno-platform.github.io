@@ -6,3 +6,6 @@ It provides system operators and automation software developers with an open sou
 
 The complete [documentation](https://sogno-platform.github.io) is available on github pages.
 
+## Development Setup
+
+A dedicated readme for the local development setup is available [here](development.md)

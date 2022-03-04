@@ -17,4 +17,6 @@ WORKDIR /website
 # npm install -D --save autoprefixer
 # npm install -D --save postcss-cli
 
+ENTRYPOINT ["./docker-entrypoint.sh"]
+
 EXPOSE 1313
