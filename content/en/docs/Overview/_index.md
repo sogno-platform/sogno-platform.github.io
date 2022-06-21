@@ -23,9 +23,11 @@ development, testing and deployment. New automation functionalities can be devel
 
 ## Components
 
-{{< readfile file="/static/architecture.svg" markdown="true" >}}
+Each service is composed of the API and the automation function implementation.
+The idea is to configure and run the automation function using the API when it is deployed in a cloud environment.
 
-## Data Flow
+For local testing, only the automation function is required, which is located in the second layer of the diagram below.
+The blocks in the diagram have links to the repositories hosted on GitHub.
+The deployment respoitory is the best starting point if you would like to try out the deployment of a group of services.
 
-{{< readfile file="/static/service-dataflow.svg" markdown="true" >}}
-
+{{< readfile file="/static/service-overview.svg" markdown="true" >}}
