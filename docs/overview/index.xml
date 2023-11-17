@@ -1,0 +1,12 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SOGNO – Overview</title><link>https://sogno-platform.github.io/docs/overview/</link><description>Recent content in Overview on SOGNO</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://sogno-platform.github.io/docs/overview/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Architecture</title><link>https://sogno-platform.github.io/docs/overview/architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sogno-platform.github.io/docs/overview/architecture/</guid><description>
+&lt;h2 id="data-flow">Data Flow&lt;/h2>
+&lt;p>The diagram below depicts the data flow between the services included in SOGNO.
+The services should be as independent as possible from each other so that a deployment may include only few or all services depending on the user requirements.
+The diagram can be also viewed in a &lt;a href="https://raw.githubusercontent.com/sogno-platform/sogno-platform.github.io/master/static/service-dataflow.svg">separate page&lt;/a>.&lt;/p>
+&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1210px">
+&lt;img class="card-img-top" src="https://sogno-platform.github.io/docs/overview/architecture/service-dataflow_hu7f781c11fe4cf96b67f3114da166be38_146301_1200x800_fit_catmullrom_3.png" width="1200" height="519">
+&lt;figcaption class="card-body px-0 pt-2 pb-0">
+&lt;p class="card-text">
+&lt;/p>
+&lt;/figcaption>
+&lt;/figure></description></item></channel></rss>
