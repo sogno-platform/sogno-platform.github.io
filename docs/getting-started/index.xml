@@ -24,7 +24,9 @@
 &lt;pre tabindex="0">&lt;code>export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
 &lt;/code>&lt;/pre>&lt;p>For a more convenient and persistent usage, you can also append it to your &lt;code>.bashrc&lt;/code>&lt;/p>
 &lt;pre tabindex="0">&lt;code>echo &amp;#34;export KUBECONFIG=/etc/rancher/k3s/k3s.yaml&amp;#34; &amp;gt;&amp;gt; ~/.bashrc
-&lt;/code>&lt;/pre>&lt;h3 id="databus">Databus&lt;/h3>
+&lt;/code>&lt;/pre>&lt;p>To use the helmcharts provided by SOGNO add our helm repository by running&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>helm repo add sogno https://sogno-platform.github.io/helm-charts
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="databus">Databus&lt;/h3>
 &lt;p>One of the most central elements in the SOGNO architecture is the central databus. The current release uses MQTT over the &lt;a href="https://www.rabbitmq.com/">RabbitMQ&lt;/a> broker. We can install rabbitmq via helm:&lt;/p>
 &lt;pre tabindex="0">&lt;code># The `rabbitmq_values.yaml` file contains SOGNO specific overwrites of the default rabbitMQ values.
 cat &amp;gt; /etc/rancher/k3s/rabbitmq_values.yaml&amp;lt;&amp;lt; EOF
