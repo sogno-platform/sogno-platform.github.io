@@ -62,6 +62,11 @@ For a more convenient and persistent usage, you can also append it to your `.bas
 echo "export KUBECONFIG=/etc/rancher/k3s/k3s.yaml" >> ~/.bashrc
 ```
 
+To use the helmcharts provided by SOGNO add our helm repository by running
+```bash
+helm repo add sogno https://sogno-platform.github.io/helm-charts
+```
+
 ### Databus
 
 One of the most central elements in the SOGNO architecture is the central databus. The current release uses MQTT over the [RabbitMQ](https://www.rabbitmq.com/) broker. We can install rabbitmq via helm:
